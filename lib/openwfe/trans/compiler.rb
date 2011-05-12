@@ -106,7 +106,7 @@ module Trans
         @graph = graph
 
         @tree = Expression.new(
-          'process-definition',
+          'process_definition',
           { 'name' => 'none', 'revision' => 'none' })
 
         @current_expression = @tree
@@ -144,7 +144,7 @@ module Trans
       def wrap_in_subprocess (place)
 
         return if @seen_places.include?(place.eid)
-        start 'process-definition', { 'name' => "d_#{place.eid}" }
+        start 'process_definition', { 'name' => "d_#{place.eid}" }
         handle_place place
       end
 

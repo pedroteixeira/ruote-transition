@@ -82,8 +82,8 @@ tree = OpenWFE::Trans::StepCompiler.compile(graphs.first)
 
 case oformat
   when 'x'
-  #puts OpenWFE::ExpressionTree.to_s(tree, 3)
-  puts tree.inspect
+    #puts OpenWFE::ExpressionTree.to_s(tree, 3)
+    puts tree.inspect
   when 'r'
    puts Ruote::Reader.to_ruby(tree).strip
     # puts OpenWFE::ExpressionTree.to_code_s(tree)
